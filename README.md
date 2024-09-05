@@ -1,5 +1,4 @@
 # UM6P-Team-Meta-KDD-2024-CUP
-the Comprehensive RAG Benchmark - Meta KDD 2024 CUP
 ![banner image](https://aicrowd-production.s3.eu-central-1.amazonaws.com/challenge_images/meta-kdd-cup-24/meta_kdd_cup_24_banner.jpg)
 [![Discord](https://img.shields.io/discord/565639094860775436.svg)](https://discord.gg/yWurtB2huX)
 
