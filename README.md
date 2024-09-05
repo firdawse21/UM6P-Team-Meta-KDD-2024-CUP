@@ -31,14 +31,15 @@ Retrieval contents are divided into two types to simulate practical scenarios fo
 
 
 # 🏁 Getting Started
+
    1. **✍️ Install dependencies**
    ```bash
        pip install -r requirements.txt
-       ```
+   ```
 
    2. **🚴 Download the models**
+   3. **Test your model locally using python local_evaluation.py**
 
-   3.Test your model locally using python local_evaluation.py.
 
 
 
