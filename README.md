@@ -7,7 +7,12 @@
 1. [Competition Overview](#-competition-overview)
 2. [Dataset](#-dataset)
 3. [Getting Started](#-getting-started)
-4. [Important Links](#-important-links)
+      - [Install dependencies](-Install-dependencies)
+      - [Download the models](-Download-the-models)
+           - [Preliminary Steps](-####-Preliminary-Steps)
+           - [Hugging Face Authentication](-####-Hugging-Face-Authentication)
+           - [Model Downloads](-####-Model-Downloads)
+5. [Important Links](#-important-links)
 
 
 # 📖 Competition Overview
@@ -32,13 +37,68 @@ Retrieval contents are divided into two types to simulate practical scenarios fo
 
 # 🏁 Getting Started
 
-   1. **✍️ Install dependencies**
+   1. **Install dependencies**
    ```bash
        pip install -r requirements.txt
    ```
 
-   2. **🚴 Download the models**
-   3. **Test your model locally using python local_evaluation.py**
+   2. **Download the models**
+         #### Preliminary Steps:
+
+         1. **Install the Hugging Face Hub Package**:
+            
+            Begin by installing the `huggingface_hub` package, which includes the `hf_transfer` utility, by running the following command in your terminal:
+         
+            ```bash
+            pip install huggingface_hub[hf_transfer]
+            ```
+         
+         2. **Accept the LLaMA Terms**:
+            
+            You must accept the LLaMA model's terms of use by visiting: [LLaMA-2-7b-chat-hf Terms](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf).
+         
+         3. **Create a Hugging Face CLI Token**:
+            
+            Generate a CLI token by navigating to: [Hugging Face Token Settings](https://huggingface.co/settings/tokens). You will need this token for authentication.
+         
+         #### Hugging Face Authentication:
+         
+         1. **Login via CLI**:
+            
+            Authenticate yourself with the Hugging Face CLI using the token created in the previous step. Run:
+         
+            ```bash
+            huggingface-cli login
+            ```
+         
+            When prompted, enter the token.
+         
+         #### Model Downloads:
+         
+         1. **Download LLaMA-2-7b Model**:
+         
+            Execute the following command to download the `Llama-2-7b-chat-hf` model to a local subdirectory. This command excludes unnecessary files to save space:
+         
+            ```bash
+            HF_HUB_ENABLE_HF_TRANSFER=1 huggingface-cli download \
+                meta-llama/Llama-2-7b-chat-hf \
+                --local-dir-use-symlinks False \
+                --local-dir models/meta-llama/Llama-2-7b-chat-hf \
+                --exclude *.bin # These are alternates to the safetensors hence not needed
+            ```
+         
+         3. **Download MiniLM-L6-v2 Model (for sentence embeddings)**:
+         
+            Similarly, download the `sentence-transformers/all-MiniLM-L6-v2` model using the following command:
+         
+            ```bash
+            HF_HUB_ENABLE_HF_TRANSFER=1 huggingface-cli download \
+               sentence-transformers/all-MiniLM-L6-v2 \
+                --local-dir-use-symlinks False \
+                --local-dir models/sentence-transformers/all-MiniLM-L6-v2 \
+                --exclude *.bin *.h5 *.ot # These are alternates to the safetensors hence not needed
+            ```
+   4. **Test your model locally using python local_evaluation.py**
 
 
 
