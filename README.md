@@ -6,16 +6,8 @@
 
 1. [Competition Overview](#-competition-overview)
 2. [Dataset](#-dataset)
-5. [Getting Started](#-getting-started)
-   - [Install dependencies](#️-Install-dependencies)
-   - [Download the models](#-Download-the-models)
-      - [Setup](#setup)
-      - [How to make a submission?](#-how-to-make-a-submission)
-      - [What hardware does my code run on?](#-what-hardware-does-my-code-run-on-)
-      - [How are my model responses parsed by the evaluators?](#-how-are-my-model-responses-parsed-by-the-evaluators-)
-      - [Baselines](#baselines)
-6. [Frequently Asked Questions](#-frequently-asked-questions)
-6. [Important Links](#-important-links)
+3. [Getting Started](#-getting-started)
+4. [Important Links](#-important-links)
 
 
 # 📖 Competition Overview
