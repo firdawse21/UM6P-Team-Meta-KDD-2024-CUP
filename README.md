@@ -7,8 +7,8 @@
 1. [Competition Overview](#-competition-overview)
 2. [Dataset](#-dataset)
 5. [Getting Started](#-getting-started)
-   - [How to write your own model?](#️-how-to-write-your-own-model)
-   - [How to start participating?](#-how-to-start-participating)
+   - [Install dependencies](#️-Install-dependencies)
+   - [Download the models](#-Download-the-models)
       - [Setup](#setup)
       - [How to make a submission?](#-how-to-make-a-submission)
       - [What hardware does my code run on?](#-what-hardware-does-my-code-run-on-)
@@ -39,43 +39,15 @@ Retrieval contents are divided into two types to simulate practical scenarios fo
 
 
 # 🏁 Getting Started
-1. **Sign up** to join the competition [on the AIcrowd website](https://www.aicrowd.com/challenges/meta-comprehensive-rag-benchmark-kdd-cup-2024).
-2. **Fork** this starter kit repository. You can use [this link](https://gitlab.aicrowd.com/aicrowd/challenges/meta-comprehensive-rag-benchmark-kdd-cup-2024/meta-comphrehensive-rag-benchmark-starter-kit/-/forks/new) to create a fork.
-3. **Clone** your forked repo and start developing your model.
-4. **Develop** your model(s) following the template in [how to write your own model](#how-to-write-your-own-model) section.
-5. [**Submit**](#-how-to-make-a-submission) your trained models to [AIcrowd Gitlab](https://gitlab.aicrowd.com) for evaluation [(full instructions below)](#-how-to-make-a-submission). The automated evaluation will evaluate the submissions on the public test set and report the metrics on the leaderboard of the competition.
+   1. **✍️ Install dependencies**
+   ```bash
+       pip install -r requirements.txt
+       ```
 
-# ✍️ How to write your own model?
+   2. **🚴 Download the models**
 
-Please follow the instructions in [models/README.md](models/README.md) for instructions and examples on how to write your own models for this competition.
+   3.Test your model locally using python local_evaluation.py.
 
-# 🚴 How to start participating?
-
-## Setup
-
-1. **Add your SSH key** to AIcrowd GitLab
-
-You can add your SSH Keys to your GitLab account by going to your profile settings [here](https://gitlab.aicrowd.com/-/profile/keys). If you do not have SSH Keys, you will first need to [generate one](https://docs.gitlab.com/ee/user/ssh.html).
-
-
-2. **Fork the repository**. You can use [this link](https://gitlab.aicrowd.com/aicrowd/challenges/meta-comprehensive-rag-benchmark-kdd-cup-2024/meta-comphrehensive-rag-benchmark-starter-kit/-/forks/new) to create a fork.
-
-3.  **Clone the repository**
-
-    ```bash
-    git clone git@gitlab.aicrowd.com:<YOUR-AICROWD-USERNAME>/meta-comphrehensive-rag-benchmark-starter-kit.git
-    cd meta-comphrehensive-rag-benchmark-starter-kit
-    ```
-
-4. **Install** competition specific dependencies!
-    ```bash
-    cd meta-comphrehensive-rag-benchmark-starter-kit
-    pip install -r requirements.txt
-    ```
-
-5. Write your own model as described in [How to write your own model](#how-to-write-your-own-model) section.
-
-6. Test your model locally using `python local_evaluation.py`.
 
 
 # 📎 Important links
