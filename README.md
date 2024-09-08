@@ -18,7 +18,7 @@
 # 📖 Competition Overview
 The Comprehensive RAG (CRAG) Benchmark evaluates RAG systems across five domains and eight question types, and provides a practical set-up to evaluate RAG systems. In particular, CRAG includes questions with answers that change from over seconds to over years; it considers entity popularity and covers not only head, but also torso and tail facts; it contains simple-fact questions as well as 7 types of complex questions such as comparison, aggregation and set questions to test the reasoning and synthesis capabilities of RAG solutions.
 
-# 📊 Dataset
+# Dataset
 
 The CRAG dataset is designed to support the development and evaluation of Retrieval-Augmented Generation (RAG) models. It consists of two main types of data:
 
@@ -35,7 +35,7 @@ Retrieval contents are divided into two types to simulate practical scenarios fo
 - **Task #3:** [End to End Retreival Augmentation Task Page](https://www.aicrowd.com/challenges/meta-comprehensive-rag-benchmark-kdd-cup-2024/problems/end-to-end-retrieval-augmented-generation)
 
 
-# 🏁 Getting Started
+# Getting Started
 
    1. **Install dependencies**
    ```bash
@@ -103,7 +103,7 @@ Retrieval contents are divided into two types to simulate practical scenarios fo
 
 
 
-# 📎 Important links
+# Important links
 
 - 💪 Challenge Page: https://www.aicrowd.com/challenges/meta-comprehensive-rag-benchmark-kdd-cup-2024
 
